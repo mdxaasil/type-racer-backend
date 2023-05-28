@@ -120,7 +120,7 @@ const startGameClock= async(gameID)=>{
     game.startTime = new Date().getTime();
     game = await game.save();  
 
-    let time = 200;
+    let time = 120;
     let timerID = setInterval(function gameIntervalFunc(){
         
         if(time >= 0){
