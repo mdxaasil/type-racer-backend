@@ -9,7 +9,9 @@ const Game=require('./models/Game');
 const QuotableAPI =require('./QuotableAPI');
 // const { default: socket } = require('./client/src/socketConfig');
 
-const mongoURI = "mongodb://127.0.0.1:27017/typeracer";
+// const mongoURI = "mongodb://127.0.0.1:27017/typeracer";
+const mongoURI = "mongodb+srv://lisaa:aasil@cluster0.eeihkww.mongodb.net/?retryWrites=true&w=majority";;
+
 
 mongoose.connect(mongoURI,{useNewUrlParser:true,useUnifiedTopology:true},)
 .then(()=>console.log('Finally Connected to database Successfully!!'))
