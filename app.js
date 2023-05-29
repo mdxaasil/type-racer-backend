@@ -12,10 +12,11 @@ const QuotableAPI =require('./QuotableAPI');
 // const mongoURI = "mongodb://127.0.0.1:27017/typeracer";
 const mongoURI = "mongodb+srv://aasil:lisaa@cluster0.jdstsf3.mongodb.net/?retryWrites=true&w=majority";
 
-const cors = require('cors');
-app.use(cors({
-    origin: '*'
-}));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://master--bright-cassata-da9705.netlify.app');
+    // Add other necessary headers here if needed
+    next();
+  });
 
 mongoose.connect(mongoURI,{useNewUrlParser:true,useUnifiedTopology:true},)
 .then(()=>console.log('Finally Connected to database Successfully!!'))
