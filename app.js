@@ -12,6 +12,10 @@ const QuotableAPI =require('./QuotableAPI');
 // const mongoURI = "mongodb://127.0.0.1:27017/typeracer";
 const mongoURI = "mongodb+srv://lisaa:aasil@cluster0.eeihkww.mongodb.net/?retryWrites=true&w=majority";;
 
+const cors = require('cors');
+app.use(cors({
+    origin: 'https://master--bright-cassata-da9705.netlify.app/'
+}));
 
 mongoose.connect(mongoURI,{useNewUrlParser:true,useUnifiedTopology:true},)
 .then(()=>console.log('Finally Connected to database Successfully!!'))
