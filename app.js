@@ -10,7 +10,7 @@ const QuotableAPI =require('./QuotableAPI');
 // const { default: socket } = require('./client/src/socketConfig');
 
 // const mongoURI = "mongodb://127.0.0.1:27017/typeracer";
-const uri = "mongodb+srv://aasil:lisaa@cluster0.jdstsf3.mongodb.net/?retryWrites=true&w=majority";
+const mongoURI = "mongodb+srv://aasil:lisaa@cluster0.jdstsf3.mongodb.net/?retryWrites=true&w=majority";
 
 const cors = require('cors');
 app.use(cors({
