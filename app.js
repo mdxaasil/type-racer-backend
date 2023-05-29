@@ -14,7 +14,7 @@ const mongoURI = "mongodb+srv://lisaa:aasil@cluster0.eeihkww.mongodb.net/?retryW
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://master--bright-cassata-da9705.netlify.app/'
+    origin: '*'
 }));
 
 mongoose.connect(mongoURI,{useNewUrlParser:true,useUnifiedTopology:true},)
