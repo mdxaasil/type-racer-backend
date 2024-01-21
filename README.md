@@ -22,3 +22,6 @@ TYPERACER is an online multiplayer typing game developed using JavaScript and Re
 - Inspired by the love for typing and friendly competition.
 
 Happy Typing!
+
+## Contributors
+- @Meenakshi1108
